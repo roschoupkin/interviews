@@ -12,12 +12,12 @@ const BRACKETS = {
   '}': '{'
 };
 
-function isClosedBracket(ch) {
-  return Object.keys(BRACKETS).indexOf(ch) >= 0;
+function isClosedBracket(char) {
+  return Boolean(BRACKETS[char]);
 }
 
-function isOpenedBracket(ch) {
-  return Object.values(BRACKETS).indexOf(ch) >= 0;
+function isOpenedBracket(char) {
+  return Object.values(BRACKETS).indexOf(char) >= 0;
 }
 
 function isValid(str) {
