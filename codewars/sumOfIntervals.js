@@ -36,7 +36,7 @@ function sumIntervals3(intervals){
   const numbers = [];
   intervals.forEach( function(interval) {
     for (let i = interval[0] ; i < interval[1] ; i++) {
-      if (numbers.indexOf(i) == -1) numbers.push(i);
+      if (numbers.indexOf(i) === -1) numbers.push(i);
     }
   });
   return numbers.length;
@@ -44,7 +44,7 @@ function sumIntervals3(intervals){
 
 function sumIntervals4(intervals){
   const numbers = {};
-  intervals.forEach(function(x) {
+  intervals.forEach((x) => {
     for (let i = x[0]; i < x[1]; i++) {
       numbers[i] = i;
     }

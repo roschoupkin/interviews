@@ -39,7 +39,7 @@ function anagrams2(word, words) {
 
 function anagrams3(word, words) {
   word = word.split('').sort().join('');
-  return words.filter(function(v) {return word == v.split('').sort().join('');});
+  return words.filter((v) => word == v.split('').sort().join(''));
 }
 
 anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']); // ['aabb', 'bbaa']
