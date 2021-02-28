@@ -1,4 +1,3 @@
-import { describe, expect, it } from '@jest/globals';
 import { centuryFromYear } from '../practice/centuryFromYear';
 
 describe('Century from year', () => {

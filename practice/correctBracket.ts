@@ -20,7 +20,7 @@ function isOpenedBracket(char) {
   return Object.values(BRACKETS).indexOf(char) >= 0;
 }
 
-function isValid(str) {
+export function isValid(str: string) {
   const stack = [];
   for (const char of str) {
     if (isClosedBracket(char)) {
@@ -33,13 +33,3 @@ function isValid(str) {
   }
   return stack.length === 0;
 }
-
-isValid("(foo)");  // true
-isValid("(f[o]{o})");  // true
-isValid("[(){}()()]");  // true
-isValid("(foo");  // false
-isValid("{f[o}o]");  // false
-isValid("()[]{}");  // true
-isValid("((()(())))");  // true
-isValid("(]");  // false
-isValid("([)]");  // false
