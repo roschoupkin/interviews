@@ -20,8 +20,7 @@
     "import/extensions": "off",
     "@typescript-eslint/camelcase": "off",
     "import/prefer-default-export": "warn",
-    "@typescript-eslint/no-unused-vars": "off",
-    "@typescript-eslint/interface-name-prefix": ["error", { "prefixWithI": "always" }]
+    "@typescript-eslint/no-unused-vars": "off"
   },
   "settings": {
     "import/resolver": {
