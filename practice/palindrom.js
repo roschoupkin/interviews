@@ -5,8 +5,8 @@
  */
 
 function palindrome(str) {
-  str = str.toLowerCase()
-  return str === str.split('').reverse().join('')
+  str = str.toLowerCase();
+  return str === str.split('').reverse().join('');
 }
 
 palindrome('racecar'); // true

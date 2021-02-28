@@ -6,14 +6,14 @@
 
 function sum() {
   const argSum = (arg) => Array.from(arg).reduce((s, n) => s + n, 0);
-  let sum = + argSum(arguments);
+  let sum = +argSum(arguments);
 
   function func() {
     sum += argSum(arguments);
     return func;
   }
 
-  func.valueOf = function() {
+  func.valueOf = function () {
     return sum;
   };
 

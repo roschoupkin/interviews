@@ -19,35 +19,37 @@
  * if you want to translate, please ask before translating.
  */
 
-function dirReduc(arr){
+function dirReduc(arr) {
   let directions = arr.join(' ');
-  const regex = /(NORTH\s*SOUTH)|(EAST\s*WEST)|(SOUTH\s*NORTH)|(WEST\s*EAST)/gi
+  const regex = /(NORTH\s*SOUTH)|(EAST\s*WEST)|(SOUTH\s*NORTH)|(WEST\s*EAST)/gi;
   while (regex.test(directions)) {
     directions = directions.replace(regex, '');
   }
-  return directions.split(' ').filter(d => !!d);
+  return directions.split(' ').filter((d) => !!d);
 }
 
 function dirReduc2(plan) {
   const opposite = {
-    'NORTH': 'SOUTH', 'EAST': 'WEST', 'SOUTH': 'NORTH', 'WEST': 'EAST'};
-  return plan.reduce(function(dirs, dir){
-    if (dirs[dirs.length - 1] === opposite[dir])
-      dirs.pop();
-    else
-      dirs.push(dir);
+    NORTH: 'SOUTH',
+    EAST: 'WEST',
+    SOUTH: 'NORTH',
+    WEST: 'EAST',
+  };
+  return plan.reduce(function (dirs, dir) {
+    if (dirs[dirs.length - 1] === opposite[dir]) dirs.pop();
+    else dirs.push(dir);
     return dirs;
   }, []);
 }
 
-function dirReduc3(arr){
-  const opposite = { "SOUTH":"NORTH", "NORTH":"SOUTH", "WEST":"EAST", "EAST":"WEST"}
+function dirReduc3(arr) {
+  const opposite = { SOUTH: 'NORTH', NORTH: 'SOUTH', WEST: 'EAST', EAST: 'WEST' };
   return arr.reduce(function (a, b, i) {
-    opposite[a.slice(-1)] === b ? a.pop() : a.push(b)
-    return a
-  }, [])
+    opposite[a.slice(-1)] === b ? a.pop() : a.push(b);
+    return a;
+  }, []);
 }
 
-dirReduc(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"]); // ["WEST"]
-dirReduc2(["NORTH", "WEST", "SOUTH", "EAST"]); // ["NORTH", "WEST", "SOUTH", "EAST"]
-dirReduc3(["NORTH", "SOUTH", "EAST", "WEST", "EAST", "WEST"]); // []
+dirReduc(['NORTH', 'SOUTH', 'SOUTH', 'EAST', 'WEST', 'NORTH', 'WEST']); // ["WEST"]
+dirReduc2(['NORTH', 'WEST', 'SOUTH', 'EAST']); // ["NORTH", "WEST", "SOUTH", "EAST"]
+dirReduc3(['NORTH', 'SOUTH', 'EAST', 'WEST', 'EAST', 'WEST']); // []

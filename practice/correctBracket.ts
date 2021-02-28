@@ -9,7 +9,7 @@
 const BRACKETS = {
   ')': '(',
   ']': '[',
-  '}': '{'
+  '}': '{',
 };
 
 function isClosedBracket(char) {

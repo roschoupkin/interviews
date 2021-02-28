@@ -1,0 +1,34 @@
+{
+  "root": true,
+  "extends": [
+    "plugin:prettier/recommended",
+    "prettier/standard",
+    "plugin:import/typescript",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["prettier", "@typescript-eslint/eslint-plugin"],
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "no-param-reassign": "off",
+    "no-plusplus": "off",
+    "no-console": "warn",
+    "camelcase": "off",
+    "no-restricted-syntax": ["error", "LabeledStatement", "WithStatement"],
+    "prettier/prettier": "error",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "import/extensions": "off",
+    "@typescript-eslint/camelcase": "off",
+    "import/prefer-default-export": "warn",
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/interface-name-prefix": ["error", { "prefixWithI": "always" }]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".ts"]
+      }
+    }
+  },
+}

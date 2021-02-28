@@ -4,7 +4,7 @@
  * toCamelCase("The_Stealth_Warrior") // returns "TheStealthWarrior"
  */
 
-function toCamelCase(str){
+function toCamelCase(str) {
   return str.split(/[\_||-]/g).reduce((s, v, i) => {
     if (i === 0) {
       return s + v;
@@ -13,17 +13,17 @@ function toCamelCase(str){
   }, '');
 }
 
-function toCamelCase2(str){
-  const regExp=/[-_]\w/ig;
-  return str.replace(regExp,function(match){
+function toCamelCase2(str) {
+  const regExp = /[-_]\w/gi;
+  return str.replace(regExp, function (match) {
     return match.charAt(1).toUpperCase();
   });
 }
 
-function toCamelCase3(str){
+function toCamelCase3(str) {
   return str.replace(/[-_](.)/g, (_, c) => c.toUpperCase());
 }
 
-toCamelCase("the-stealth-warrior") // returns "theStealthWarrior"
-toCamelCase2("The_Stealth_Warrior") // returns "TheStealthWarrior"
-toCamelCase3("The_Stealth-warrior") // returns "TheStealthWarrior"
+toCamelCase('the-stealth-warrior'); // returns "theStealthWarrior"
+toCamelCase2('The_Stealth_Warrior'); // returns "TheStealthWarrior"
+toCamelCase3('The_Stealth-warrior'); // returns "TheStealthWarrior"

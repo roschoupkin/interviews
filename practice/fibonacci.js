@@ -5,25 +5,25 @@
  */
 
 function fibonacci(num) {
-  if(num < 2) {
-    return num
+  if (num < 2) {
+    return num;
   }
-  return fibonacci(num - 1) + fibonacci(num - 2)
+  return fibonacci(num - 1) + fibonacci(num - 2);
 }
 
 fibonacci(3); // 2
 fibonacci(10); // 34
 
 function fibonacci2(num) {
-  const result = [0, 1]
+  const result = [0, 1];
 
-  for(let i = 2; i <= num; i++) {
-    const prevNum1 = result[i - 1]
-    const prevNum2 = result[i - 2]
-    result.push(prevNum1 + prevNum2)
+  for (let i = 2; i <= num; i++) {
+    const prevNum1 = result[i - 1];
+    const prevNum2 = result[i - 2];
+    result.push(prevNum1 + prevNum2);
   }
 
-  return result[num]
+  return result[num];
 }
 
 fibonacci2(3); // 2

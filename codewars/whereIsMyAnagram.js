@@ -15,7 +15,7 @@ function anagrams(word, words) {
     }
     return w;
   }, {});
-  return words.filter(w => {
+  return words.filter((w) => {
     const mw = Object.entries(chars).reduce((rw, [c, v]) => {
       const regex = new RegExp(c, 'g');
       if ((rw.match(regex) || []).length === v) {
@@ -27,12 +27,12 @@ function anagrams(word, words) {
   });
 }
 
-String.prototype.sort = function() {
-  return this.split("").sort().join("");
+String.prototype.sort = function () {
+  return this.split('').sort().join('');
 };
 
 function anagrams2(word, words) {
-  return words.filter(function(x) {
+  return words.filter(function (x) {
     return x.sort() === word.sort();
   });
 }
@@ -44,4 +44,4 @@ function anagrams3(word, words) {
 
 anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']); // ['aabb', 'bbaa']
 anagrams2('racer', ['crazer', 'carer', 'racar', 'caers', 'racer']); // ['carer', 'racer']
-anagrams3('laser', ['lazing', 'lazy',  'lacer']); // []
+anagrams3('laser', ['lazing', 'lazy', 'lacer']); // []

@@ -4,12 +4,15 @@
  * pigIt('Hello world !');  // elloHay orldway !
  */
 
-function pigIt(str){
-  return str.split(' ').map(w => /\W/.test(w) ? w : `${w.slice(1, w.length)}${w[0]}ay`).join(' ');
+function pigIt(str) {
+  return str
+    .split(' ')
+    .map((w) => (/\W/.test(w) ? w : `${w.slice(1, w.length)}${w[0]}ay`))
+    .join(' ');
 }
 
-function pigIt2(str){
-  return str.replace(/(\w)(\w*)(\s|$)/g, "\$2\$1ay\$3")
+function pigIt2(str) {
+  return str.replace(/(\w)(\w*)(\s|$)/g, '$2$1ay$3');
 }
 
 function pigIt3(str) {
@@ -18,6 +21,6 @@ function pigIt3(str) {
   });
 }
 
-pigIt('Pig latin is cool');  // igPay atinlay siay oolcay
-pigIt2('Hello world !');  // elloHay orldway !
-pigIt3('Hello world !');  // elloHay orldway !
+pigIt('Pig latin is cool'); // igPay atinlay siay oolcay
+pigIt2('Hello world !'); // elloHay orldway !
+pigIt3('Hello world !'); // elloHay orldway !

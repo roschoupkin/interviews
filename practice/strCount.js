@@ -12,14 +12,14 @@ function strCountByRegExp(str, subStr) {
   return (str.match(new RegExp(subStr, 'g')) ?? []).length;
 }
 
-strCountByRegExp('Hello', 'o') // => 1
-strCountByRegExp('Hello', 'l') // => 2
-strCountByRegExp('', 'z')      // => 0
+strCountByRegExp('Hello', 'o'); // => 1
+strCountByRegExp('Hello', 'l'); // => 2
+strCountByRegExp('', 'z'); // => 0
 
 function strCountFast(str, subStr) {
   return str.split(subStr).length - 1;
 }
 
-strCountFast('Hello', 'o') // => 1
-strCountFast('Hello', 'l') // => 2
-strCountFast('', 'z')      // => 0
+strCountFast('Hello', 'o'); // => 1
+strCountFast('Hello', 'l'); // => 2
+strCountFast('', 'z'); // => 0

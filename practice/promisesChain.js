@@ -3,9 +3,9 @@ const urls = new Array(50).fill('Some data');
 
 // Delay function (imitate request)
 function delay(v, i) {
-  return new Promise(resolve => {
-    setTimeout(() => resolve({ v , i }), i % 2 === 0 ? 200 : 400);
-  })
+  return new Promise((resolve) => {
+    setTimeout(() => resolve({ v, i }), i % 2 === 0 ? 200 : 400);
+  });
 }
 
 async function request(urls = [], amount = 5) {
@@ -24,7 +24,7 @@ async function request(urls = [], amount = 5) {
       });
     }
     return p;
-  }
+  };
 
   await Promise.all(array.map(chain));
   return result;

@@ -5,27 +5,27 @@
  * You can assume nothing about the triplets given to you other than that they are valid triplets and that they contain sufficient information to deduce the original string. In particular, this means that the secret string will never contain letters that do not occur in one of the triplets given to you.
  */
 
-const recoverSecret = function(triplets) {
+const recoverSecret = function (triplets) {
   const secret = [];
-  while(triplets.filter(t => t.length).length) {
+  while (triplets.filter((t) => t.length).length) {
     for (const [letter] of triplets) {
-      if (triplets.every(triplet => triplet.indexOf(letter) <= 0)) {
+      if (triplets.every((triplet) => triplet.indexOf(letter) <= 0)) {
         secret.push(letter);
-        for (const triplet of triplets.filter(t => t[0] === letter)) {
-          triplet.shift()
+        for (const triplet of triplets.filter((t) => t[0] === letter)) {
+          triplet.shift();
         }
       }
     }
   }
   return secret.join('');
-}
+};
 
 recoverSecret([
-  ['t','u','p'],
-  ['w','h','i'],
-  ['t','s','u'],
-  ['a','t','s'],
-  ['h','a','p'],
-  ['t','i','s'],
-  ['w','h','s']
+  ['t', 'u', 'p'],
+  ['w', 'h', 'i'],
+  ['t', 's', 'u'],
+  ['a', 't', 's'],
+  ['h', 'a', 'p'],
+  ['t', 'i', 's'],
+  ['w', 'h', 's'],
 ]); // whatisup

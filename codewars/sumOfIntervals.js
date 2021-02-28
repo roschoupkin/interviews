@@ -4,7 +4,7 @@
  */
 
 function sumIntervals(intervals) {
-  const merge = ranges => {
+  const merge = (ranges) => {
     const result = [ranges[0]];
     for (let i = 1; i < ranges.length; i++) {
       const last = result[result.length - 1];
@@ -32,17 +32,17 @@ function sumIntervals2(intervals) {
   return ranges.size;
 }
 
-function sumIntervals3(intervals){
+function sumIntervals3(intervals) {
   const numbers = [];
-  intervals.forEach( function(interval) {
-    for (let i = interval[0] ; i < interval[1] ; i++) {
+  intervals.forEach(function (interval) {
+    for (let i = interval[0]; i < interval[1]; i++) {
       if (numbers.indexOf(i) === -1) numbers.push(i);
     }
   });
   return numbers.length;
 }
 
-function sumIntervals4(intervals){
+function sumIntervals4(intervals) {
   const numbers = {};
   intervals.forEach((x) => {
     for (let i = x[0]; i < x[1]; i++) {
@@ -52,7 +52,17 @@ function sumIntervals4(intervals){
   return Object.keys(numbers).length;
 }
 
-sumIntervals([[1,5]]); // 4
-sumIntervals2([[1,5],[6,10]]); // 8
-sumIntervals3([[1,5],[1,5]]); // 4
-sumIntervals4([[1,4],[7, 10],[3, 5]]); // 7
+sumIntervals([[1, 5]]); // 4
+sumIntervals2([
+  [1, 5],
+  [6, 10],
+]); // 8
+sumIntervals3([
+  [1, 5],
+  [1, 5],
+]); // 4
+sumIntervals4([
+  [1, 4],
+  [7, 10],
+  [3, 5],
+]); // 7

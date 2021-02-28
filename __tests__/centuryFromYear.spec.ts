@@ -1,4 +1,4 @@
-import { centuryFromYear } from '../practice/centuryFromYear';
+import { centuryFromYear } from '@practice/centuryFromYear';
 
 describe('Century from year', () => {
   it('Should return correct answer', () => {
