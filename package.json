@@ -1,0 +1,22 @@
+{
+  "name": "frontend-interviews",
+  "version": "1.0.0",
+  "description": "Wiki with information about interviews",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roschoupkin/frontend-interviews.git"
+  },
+  "author": "roschoupkin@inbox.ru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roschoupkin/frontend-interviews/issues"
+  },
+  "homepage": "https://github.com/roschoupkin/frontend-interviews#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
