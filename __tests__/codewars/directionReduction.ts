@@ -3,7 +3,15 @@ import { Directions, dirReduction, dirReduction2, dirReduction3 } from '@codewar
 describe('Direction reduction', () => {
   const data = {
     first: {
-      arguments: [Directions.North, Directions.South, Directions.South, Directions.East, Directions.West, Directions.North, Directions.West],
+      arguments: [
+        Directions.North,
+        Directions.South,
+        Directions.South,
+        Directions.East,
+        Directions.West,
+        Directions.North,
+        Directions.West,
+      ],
       result: [Directions.West],
     },
     second: {
