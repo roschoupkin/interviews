@@ -4,7 +4,7 @@ I век н. э. начался 1 января 1 года и закончилс�
 II век начался в 101 году, III век — в 201 и т. д.
 */
 
-function centuryFromYear(year) {
+export function centuryFromYear(year) {
   return Math.ceil(year / 100);
 }
 
