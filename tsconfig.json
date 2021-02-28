@@ -15,21 +15,12 @@
     "resolveJsonModule": true,
     "baseUrl": "./",
     "allowJs": true,
-    "lib": [
-      "dom",
-      "es2018",
-      "esnext"
-    ],
-    "typeRoots": [
-      "node_modules/@types",
-      "src/**/*.d.ts"
-    ],
+    "lib": ["dom", "es2018", "esnext"],
+    "typeRoots": ["node_modules/@types", "src/**/*.d.ts"],
     "paths": {
       "@practice/*": ["practice/*"],
-      "@codewars/*": ["codewars/*"],
+      "@codewars/*": ["codewars/*"]
     }
   },
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }

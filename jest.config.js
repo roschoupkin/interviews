@@ -7,7 +7,7 @@ module.exports = {
       preset: 'ts-jest',
       testEnvironment: 'node',
       testRegex: '/__tests__/.*\\.spec\\.(j|t)s$',
-      transform: {'.(j|t)s$': ['ts-jest']}
+      transform: { '.(j|t)s$': ['ts-jest'] },
     },
   ],
 };
