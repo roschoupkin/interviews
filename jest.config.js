@@ -8,6 +8,10 @@ module.exports = {
       testEnvironment: 'node',
       testRegex: '/__tests__/.*\\.spec\\.(j|t)s$',
       transform: { '.(j|t)s$': ['ts-jest'] },
+      moduleNameMapper: {
+        'practice/(.*)': '<rootDir>/practice/$1',
+        'codewars/(.*)': '<rootDir>/codewars/$1',
+      },
     },
   ],
 };

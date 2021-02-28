@@ -6,17 +6,17 @@
 если скобки сбалансированы, и false, если не сбалансированы.
 */
 
-const BRACKETS = {
+const BRACKETS: Record<string, string> = {
   ')': '(',
   ']': '[',
   '}': '{',
 };
 
-function isClosedBracket(char) {
+function isClosedBracket(char: string) {
   return Boolean(BRACKETS[char]);
 }
 
-function isOpenedBracket(char) {
+function isOpenedBracket(char: string) {
   return Object.values(BRACKETS).indexOf(char) >= 0;
 }
 
