@@ -4,21 +4,19 @@
  * Дополнительных проверок не надо
  */
 
-function sum() {
-  const argSum = (arg) => Array.from(arg).reduce((s, n) => s + n, 0);
-  let sum = +argSum(arguments);
+export function sum(...initial: number[]) {
+  const argSum = (numbers: ArrayLike<number>) => Array.from(numbers).reduce((s, n) => s + n, 0);
 
-  function func() {
-    sum += argSum(arguments);
+  let total = argSum(initial);
+
+  function func(...values: number[]) {
+    total += argSum(values);
     return func;
   }
 
   func.valueOf = function () {
-    return sum;
+    return total;
   };
 
-  return func();
+  return func;
 }
-
-sum(0)(0)(0)(0)(0)(0)(0)(0)(0)(0)(0)(0)(1); // 1
-sum(1)(2, 4)(5, 6, 7, 8); // 33
