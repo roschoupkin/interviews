@@ -7,12 +7,10 @@
  * - Если символ встречается 1 раз, он остается без изменений;
  * - Если символ повторяется более 1 раза, к нему добавляется количество повторений.
  */
-function counter(str) {
+
+export function counter(str: string): string {
   if (/[^A-Z]/g.test(str)) {
-    throw Error('Invalid string');
+    throw new Error('Invalid string');
   }
   return str.replace(/([A-Z])\1+/g, (m) => `${m[0]}${m.length}`);
 }
-
-console.log(counter('AAAABBBCCXYZDDDDEEEFFFAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBB')); // A4B3C2XYZD4E3F3A6B28
-console.log(counter('AAAABBBCCXYZDDDDEEEfffFFFAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBB')); // Error: Invalid string
