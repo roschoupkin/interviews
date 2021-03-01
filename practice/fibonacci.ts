@@ -4,17 +4,14 @@
  Первые десять чисел выглядят следующим образом: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34.
  */
 
-function fibonacci(num) {
+export function fibonacci(num: number): number {
   if (num < 2) {
     return num;
   }
   return fibonacci(num - 1) + fibonacci(num - 2);
 }
 
-fibonacci(3); // 2
-fibonacci(10); // 34
-
-function fibonacci2(num) {
+export function fibonacci2(num: number): number {
   const result = [0, 1];
 
   for (let i = 2; i <= num; i++) {
@@ -25,6 +22,3 @@ function fibonacci2(num) {
 
   return result[num];
 }
-
-fibonacci2(3); // 2
-fibonacci2(10); // 34
