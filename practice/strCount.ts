@@ -8,18 +8,10 @@
   - второй аргумент может быть только строкой из одного символа
 */
 
-function strCountByRegExp(str, subStr) {
+export function strCountByRegExp(str: string, subStr: string): number {
   return (str.match(new RegExp(subStr, 'g')) ?? []).length;
 }
 
-strCountByRegExp('Hello', 'o'); // => 1
-strCountByRegExp('Hello', 'l'); // => 2
-strCountByRegExp('', 'z'); // => 0
-
-function strCountFast(str, subStr) {
+export function strCountFast(str: string, subStr: string): number {
   return str.split(subStr).length - 1;
 }
-
-strCountFast('Hello', 'o'); // => 1
-strCountFast('Hello', 'l'); // => 2
-strCountFast('', 'z'); // => 0

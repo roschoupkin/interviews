@@ -4,7 +4,12 @@
  * Дополнительных проверок не надо
  */
 
-export function sum(...initial: number[]) {
+interface Func {
+  (...values: number[]): Func;
+  valueOf(): number;
+}
+
+export function sum(...initial: number[]): Func {
   const argSum = (numbers: ArrayLike<number>) => Array.from(numbers).reduce((s, n) => s + n, 0);
 
   let total = argSum(initial);
