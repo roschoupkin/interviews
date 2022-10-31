@@ -1,5 +1,8 @@
 /**
- * What is an anagram? Well, two words are anagrams of each other if they both contain the same letters. For example:
+ * Что такое анаграмма? Два слова являются анаграммами друг друга, если они оба содержат одни и те же буквы.
+ * Напишите метод anagrams, который будет находить анаграммы слова из первого аргументы во втором аргументе
+ * anagrams2('racer', ['crazer', 'carer', 'racar', 'caers', 'racer']); // ['carer', 'racer']
+ * Например:
  * 'abba' & 'baab' == true
  * 'abba' & 'bbaa' == true
  * 'abba' & 'abbba' == false
