@@ -16,3 +16,9 @@ console.log('script end');
 
 // V8: script start, script end, promise1, promise2, setTimeout
 // Edge or Safari@8 or Firefox@40: script start, script end, setTimeout, promise1, promise2
+
+try {
+  Promise.reject();
+} catch (e) {
+  console.log('reject');
+}
