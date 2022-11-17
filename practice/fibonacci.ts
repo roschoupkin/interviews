@@ -15,9 +15,7 @@ export function fibonacci2(num: number): number {
   const result = [0, 1];
 
   for (let i = 2; i <= num; i++) {
-    const prevNum1 = result[i - 1];
-    const prevNum2 = result[i - 2];
-    result.push(prevNum1 + prevNum2);
+    result.push(result[i - 1] + result[i - 2]);
   }
 
   return result[num];
