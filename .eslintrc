@@ -14,7 +14,7 @@
     "no-plusplus": "off",
     "no-console": "off",
     "camelcase": "off",
-    "no-restricted-syntax": ["error", "LabeledStatement", "WithStatement"],
+    "no-restricted-syntax": "error",
     "prettier/prettier": "error",
     "@typescript-eslint/explicit-function-return-type": "off",
     "import/extensions": "off",
