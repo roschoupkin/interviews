@@ -1,4 +1,4 @@
-import { fuzzysearch, fuzzysearch2 } from '@practice/fuzzysearch';
+import { fuzzysearch, fuzzysearch2, fuzzysearch3 } from '@practice/fuzzysearch';
 
 describe('Fuzzy Search', () => {
   it('Substring of the string by the first method', () => {
@@ -19,5 +19,15 @@ describe('Fuzzy Search', () => {
 
     expect(fuzzysearch2('cwheeel', 'cartwheel')).toBeFalsy();
     expect(fuzzysearch2('lw', 'cartwheel')).toBeFalsy();
+  });
+
+  it('Substring of the string by the second method', () => {
+    expect(fuzzysearch3('car', 'cartwheel')).toBeTruthy();
+    expect(fuzzysearch3('cwhl', 'cartwheel')).toBeTruthy();
+    expect(fuzzysearch3('cwhee', 'cartwheel')).toBeTruthy();
+    expect(fuzzysearch3('cartwheel', 'cartwheel')).toBeTruthy();
+
+    expect(fuzzysearch3('cwheeel', 'cartwheel')).toBeFalsy();
+    expect(fuzzysearch3('lw', 'cartwheel')).toBeFalsy();
   });
 });
