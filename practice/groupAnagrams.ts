@@ -19,3 +19,18 @@ export function groupAnagrams(list: string[]) {
     return result;
   }, []);
 }
+
+export function groupAnagrams2(input: string[]): string[][] {
+  const dict: Record<string, string[]> = {};
+
+  for (const s of input) {
+    const sorted = s.split('').sort().join('');
+    if (sorted in dict) {
+      dict[sorted].push(s);
+    } else {
+      dict[sorted] = [s];
+    }
+  }
+
+  return Object.values(dict);
+}
