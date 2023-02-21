@@ -1,4 +1,4 @@
-import { isPalindrome, isPalindrome2 } from '@practice/isPalindrome';
+import { isPalindrome, isPalindrome2, isPalindrome3 } from '@practice/isPalindrome';
 
 describe('is palindrome', () => {
   it('Detect palindrome correctly by the first solution', () => {
@@ -23,5 +23,17 @@ describe('is palindrome', () => {
     expect(isPalindrome2('Тест палиндрома')).toBeFalsy();
     expect(isPalindrome2('I’m not a palindrome')).toBeFalsy();
     expect(isPalindrome2('Я не палиндром')).toBeFalsy();
+  });
+
+  it('Detect palindrome correctly by the third solution', () => {
+    expect(isPalindrome3('Казак')).toBeTruthy();
+    expect(isPalindrome3('А роза упала на лапу Азора')).toBeTruthy();
+    expect(isPalindrome3('Do geese see God?')).toBeTruthy();
+    expect(isPalindrome3('Madam, I’m Adam')).toBeTruthy();
+
+    expect(isPalindrome3('Test palindrome')).toBeFalsy();
+    expect(isPalindrome3('Тест палиндрома')).toBeFalsy();
+    expect(isPalindrome3('I’m not a palindrome')).toBeFalsy();
+    expect(isPalindrome3('Я не палиндром')).toBeFalsy();
   });
 });
