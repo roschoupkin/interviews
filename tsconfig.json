@@ -16,11 +16,7 @@
     "baseUrl": "./",
     "allowJs": true,
     "lib": ["dom", "esnext"],
-    "typeRoots": ["node_modules/@types", "src/**/*.d.ts"],
-    "paths": {
-      "@practice/*": ["practice/*"],
-      "@codewars/*": ["codewars/*"]
-    }
+    "typeRoots": ["node_modules/@types", "src/**/*.d.ts"]
   },
   "exclude": ["node_modules"]
 }
