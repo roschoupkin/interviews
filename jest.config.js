@@ -1,13 +1,16 @@
+'use strict';
+
 module.exports = {
-  projects: [
-    {
-      verbose: true,
-      clearMocks: true,
-      displayName: 'test',
-      preset: 'ts-jest',
-      testEnvironment: 'node',
-      testRegex: '.*\\.spec\\.(j|t)s$',
-      transform: { '.(j|t)s$': ['ts-jest'] },
-    },
-  ],
+  verbose: true,
+  preset: 'ts-jest',
+  testMatch: ['**/?(*.)spec.ts?(x)'],
+  transformIgnorePatterns: ['/node_modules/'],
+  transform: {
+    '/.[jt]s?$/': [
+      'ts-jest',
+      {
+        tsconfig: require.resolve('./tsconfig.jest.json'),
+      },
+    ],
+  },
 };
