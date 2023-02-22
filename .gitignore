@@ -4,6 +4,11 @@ yarn-error.log
 
 # Dependency directories
 node_modules/
+.husky/_/
+
+# Coverage reports
+coverage
+junit.xml
 
 # IDE / OS files
 *.sublime-project
