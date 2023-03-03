@@ -1,33 +1,33 @@
 import { fuzzysearch, fuzzysearch2, fuzzysearch3 } from './fuzzysearch';
 
-describe('Fuzzy Search', () => {
-  it('Substring of the string by the first method', () => {
-    expect(fuzzysearch('car', 'cartwheel')).toBeTruthy();
-    expect(fuzzysearch('cwhl', 'cartwheel')).toBeTruthy();
-    expect(fuzzysearch('cwhee', 'cartwheel')).toBeTruthy();
-    expect(fuzzysearch('cartwheel', 'cartwheel')).toBeTruthy();
+describe('fuzzysearch', () => {
+  it('first', () => {
+    expect(fuzzysearch('car', 'cartwheel')).toBe(true);
+    expect(fuzzysearch('cwhl', 'cartwheel')).toBe(true);
+    expect(fuzzysearch('cwhee', 'cartwheel')).toBe(true);
+    expect(fuzzysearch('cartwheel', 'cartwheel')).toBe(true);
 
-    expect(fuzzysearch('cwheeel', 'cartwheel')).toBeFalsy();
-    expect(fuzzysearch('lw', 'cartwheel')).toBeFalsy();
+    expect(fuzzysearch('cwheeel', 'cartwheel')).toBe(false);
+    expect(fuzzysearch('lw', 'cartwheel')).toBe(false);
   });
 
-  it('Substring of the string by the second method', () => {
-    expect(fuzzysearch2('car', 'cartwheel')).toBeTruthy();
-    expect(fuzzysearch2('cwhl', 'cartwheel')).toBeTruthy();
-    expect(fuzzysearch2('cwhee', 'cartwheel')).toBeTruthy();
-    expect(fuzzysearch2('cartwheel', 'cartwheel')).toBeTruthy();
+  it('second', () => {
+    expect(fuzzysearch2('car', 'cartwheel')).toBe(true);
+    expect(fuzzysearch2('cwhl', 'cartwheel')).toBe(true);
+    expect(fuzzysearch2('cwhee', 'cartwheel')).toBe(true);
+    expect(fuzzysearch2('cartwheel', 'cartwheel')).toBe(true);
 
-    expect(fuzzysearch2('cwheeel', 'cartwheel')).toBeFalsy();
-    expect(fuzzysearch2('lw', 'cartwheel')).toBeFalsy();
+    expect(fuzzysearch2('cwheeel', 'cartwheel')).toBe(false);
+    expect(fuzzysearch2('lw', 'cartwheel')).toBe(false);
   });
 
-  it('Substring of the string by the second method', () => {
-    expect(fuzzysearch3('car', 'cartwheel')).toBeTruthy();
-    expect(fuzzysearch3('cwhl', 'cartwheel')).toBeTruthy();
-    expect(fuzzysearch3('cwhee', 'cartwheel')).toBeTruthy();
-    expect(fuzzysearch3('cartwheel', 'cartwheel')).toBeTruthy();
+  it('third', () => {
+    expect(fuzzysearch3('car', 'cartwheel')).toBe(true);
+    expect(fuzzysearch3('cwhl', 'cartwheel')).toBe(true);
+    expect(fuzzysearch3('cwhee', 'cartwheel')).toBe(true);
+    expect(fuzzysearch3('cartwheel', 'cartwheel')).toBe(true);
 
-    expect(fuzzysearch3('cwheeel', 'cartwheel')).toBeFalsy();
-    expect(fuzzysearch3('lw', 'cartwheel')).toBeFalsy();
+    expect(fuzzysearch3('cwheeel', 'cartwheel')).toBe(false);
+    expect(fuzzysearch3('lw', 'cartwheel')).toBe(false);
   });
 });

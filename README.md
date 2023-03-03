@@ -10,3 +10,4 @@
 - [Написать свой bind](./puzzles/bind/README.md)
 - [Метод получения века по году](./puzzles/centuryFromYear/README.md)
 - [Написать RLE метод](./puzzles/rle/README.md)
+- [Конвертировать списки в интервалы](./puzzles/listToRange/README.md)

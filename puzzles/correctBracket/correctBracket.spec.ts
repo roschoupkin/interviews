@@ -2,14 +2,14 @@ import { isValid } from './correctBracket';
 
 describe('Correct brackets', () => {
   it('Should check correct brackets', () => {
-    expect(isValid('(foo)')).toBeTruthy();
-    expect(isValid('(f[o]{o})')).toBeTruthy();
-    expect(isValid('[(){}()()]')).toBeTruthy();
-    expect(isValid('(foo')).toBeFalsy();
-    expect(isValid('{f[o}o]')).toBeFalsy();
-    expect(isValid('()[]{}')).toBeTruthy();
-    expect(isValid('((()(())))')).toBeTruthy();
-    expect(isValid('(]')).toBeFalsy();
-    expect(isValid('([)]')).toBeFalsy();
+    expect(isValid('(foo)')).toBe(true);
+    expect(isValid('(f[o]{o})')).toBe(true);
+    expect(isValid('[(){}()()]')).toBe(true);
+    expect(isValid('(foo')).toBe(false);
+    expect(isValid('{f[o}o]')).toBe(false);
+    expect(isValid('()[]{}')).toBe(true);
+    expect(isValid('((()(())))')).toBe(true);
+    expect(isValid('(]')).toBe(false);
+    expect(isValid('([)]')).toBe(false);
   });
 });
