@@ -16,3 +16,5 @@
 - [Последовательность фибоначи](./puzzles/fibonacci/README.md)
 - [Релизовать логику банкомата](./puzzles/atm/README.md)
 - [Реализовать минимальный полифил flat](./puzzles/flatten/README.md)
+- [Реализовать fuzzysearch](./puzzles/fuzzysearch/README.md)
+- [Генерация простых чисел](./puzzles/generatePrime/README.md)

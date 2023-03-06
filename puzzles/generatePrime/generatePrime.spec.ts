@@ -1,15 +1,16 @@
-import { getPrimeNumbers, getPrimeNumbers2 } from './getPrimeNumbers';
+import first from './generatePrime.first';
+import second from './generatePrime.second';
 
-describe('getPrimeNumbers', () => {
+describe('generatePrime', () => {
   it('The first solution', () => {
-    expect(getPrimeNumbers(2)).toStrictEqual([2]);
-    expect(getPrimeNumbers(10)).toStrictEqual([2, 3, 5, 7]);
-    expect(getPrimeNumbers(29)).toStrictEqual([2, 3, 5, 7, 11, 13, 17, 19, 23, 29]);
-    expect(getPrimeNumbers(50)).toStrictEqual([2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]);
-    expect(getPrimeNumbers(100)).toStrictEqual([
-      2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97,
-    ]);
-    expect(getPrimeNumbers(1000)).toStrictEqual([
+    expect(first(0)).toStrictEqual([]);
+    expect(first(1)).toStrictEqual([]);
+    expect(first(2)).toStrictEqual([2]);
+    expect(first(10)).toStrictEqual([2, 3, 5, 7]);
+    expect(first(29)).toStrictEqual([2, 3, 5, 7, 11, 13, 17, 19, 23, 29]);
+    expect(first(50)).toStrictEqual([2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]);
+    expect(first(100)).toStrictEqual([2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]);
+    expect(first(1000)).toStrictEqual([
       2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131,
       137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277,
       281, 283, 293, 307, 311, 313, 317, 331, 337, 347, 349, 353, 359, 367, 373, 379, 383, 389, 397, 401, 409, 419, 421, 431, 433, 439, 443,
@@ -21,14 +22,14 @@ describe('getPrimeNumbers', () => {
   });
 
   it('The second solution', () => {
-    expect(getPrimeNumbers2(2)).toStrictEqual([2]);
-    expect(getPrimeNumbers2(10)).toStrictEqual([2, 3, 5, 7]);
-    expect(getPrimeNumbers2(29)).toStrictEqual([2, 3, 5, 7, 11, 13, 17, 19, 23, 29]);
-    expect(getPrimeNumbers2(50)).toStrictEqual([2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]);
-    expect(getPrimeNumbers2(100)).toStrictEqual([
-      2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97,
-    ]);
-    expect(getPrimeNumbers2(1000)).toStrictEqual([
+    expect(second(0)).toStrictEqual([]);
+    expect(second(1)).toStrictEqual([]);
+    expect(second(2)).toStrictEqual([2]);
+    expect(second(10)).toStrictEqual([2, 3, 5, 7]);
+    expect(second(29)).toStrictEqual([2, 3, 5, 7, 11, 13, 17, 19, 23, 29]);
+    expect(second(50)).toStrictEqual([2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]);
+    expect(second(100)).toStrictEqual([2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]);
+    expect(second(1000)).toStrictEqual([
       2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131,
       137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277,
       281, 283, 293, 307, 311, 313, 317, 331, 337, 347, 349, 353, 359, 367, 373, 379, 383, 389, 397, 401, 409, 419, 421, 431, 433, 439, 443,
