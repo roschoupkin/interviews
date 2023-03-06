@@ -11,3 +11,4 @@
 - [Метод получения века по году](./puzzles/centuryFromYear/README.md)
 - [Написать RLE метод](./puzzles/rle/README.md)
 - [Конвертировать списки в интервалы](./puzzles/listToRange/README.md)
+- [Проверить сбалансированность скобок](puzzles/isCorrectBrackets/README.md)
