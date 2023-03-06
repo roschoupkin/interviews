@@ -25,6 +25,6 @@ function counter() {
 
 ### Решения
 
-- [Через цикл for, один прогон](./counter.first.ts)
-- [Через цикл for и while, один прогон](./counter.second.ts)
-- [Через регулярку](./counter.third.ts)
+- [Через цикл for, один прогон](counter.first.ts)
+- [Через цикл for и while, один прогон](counter.second.ts)
+- [Через регулярку](counter.third.ts)

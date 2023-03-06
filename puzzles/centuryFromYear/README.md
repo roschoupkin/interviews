@@ -27,4 +27,4 @@ centuryFromYear(2000); // 20
 
 ### Решения
 
-- [Через Math.ceil](./centuryFromYear.ts)
+- [Через Math.ceil](centuryFromYear.ts)

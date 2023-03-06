@@ -34,4 +34,4 @@ isCorrectBrackets('([)]'); // false
 
 ### Решения
 
-- [Проход по строке один раз](./isCorrectBracket.ts)
+- [Проход по строке один раз](isCorrectBrackets.ts)

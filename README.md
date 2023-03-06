@@ -14,3 +14,4 @@
 - [Проверить сбалансированность скобок](./puzzles/isCorrectBrackets/README.md)
 - [Обойти комнаты в отеле](./puzzles/detourRooms/README.md)
 - [Последовательность фибоначи](./puzzles/fibonacci/README.md)
+- [Релизовать логику банкомата](./puzzles/atm/README.md)

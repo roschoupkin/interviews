@@ -1,4 +1,5 @@
-import { atm, Limits, Nominal } from './atm';
+import atm from './atm';
+import { Limits, Nominal } from './atm.types';
 
 describe('atm', () => {
   it('Return values correctly', () => {

@@ -29,5 +29,5 @@ listToRange([1]); // '1'
 
 ### Решения
 
-- [Через дополнительный флаг](./listToRange.first.ts)
-- [Через цикл в цикле](./listToRange.second.ts)
+- [Через дополнительный флаг](listToRange.first.ts)
+- [Через цикл в цикле](listToRange.second.ts)
