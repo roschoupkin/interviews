@@ -13,7 +13,7 @@
   если скобки сбалансированы, и false, если не сбалансированы.
 */
 
-function centuryFromYear(year) {
+function isCorrectBrackets(list) {
   // code here
 }
 ```

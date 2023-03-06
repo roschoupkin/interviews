@@ -9,6 +9,7 @@
 
 - [Написать свой bind](./puzzles/bind/README.md)
 - [Метод получения века по году](./puzzles/centuryFromYear/README.md)
-- [Написать RLE метод](./puzzles/rle/README.md)
+- [Написать RLE метод counter](puzzles/counter/README.md)
 - [Конвертировать списки в интервалы](./puzzles/listToRange/README.md)
-- [Проверить сбалансированность скобок](puzzles/isCorrectBrackets/README.md)
+- [Проверить сбалансированность скобок](./puzzles/isCorrectBrackets/README.md)
+- [Обойти комнаты в отеле](./puzzles/detourRooms/README.md)

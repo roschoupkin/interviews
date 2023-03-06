@@ -4,13 +4,11 @@ const BRACKETS: Record<string, string> = {
   '}': '{',
 };
 
-function isClosedBracket(char: string) {
-  return Boolean(BRACKETS[char]);
-}
+const OPENED_BRACKETS = new Set(Object.keys(BRACKETS));
+const CLOSED_BRACKETS = new Set(Object.values(BRACKETS));
 
-function isOpenedBracket(char: string) {
-  return Object.values(BRACKETS).indexOf(char) >= 0;
-}
+const isClosedBracket = (char: string) => OPENED_BRACKETS.has(char);
+const isOpenedBracket = (char: string) => CLOSED_BRACKETS.has(char);
 
 export default function isCorrectBrackets(str: string) {
   const stack = [];
