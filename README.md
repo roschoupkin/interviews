@@ -13,3 +13,4 @@
 - [Конвертировать списки в интервалы](./puzzles/listToRange/README.md)
 - [Проверить сбалансированность скобок](./puzzles/isCorrectBrackets/README.md)
 - [Обойти комнаты в отеле](./puzzles/detourRooms/README.md)
+- [Последовательность фибоначи](./puzzles/fibonacci/README.md)
