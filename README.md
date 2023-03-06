@@ -18,3 +18,4 @@
 - [Реализовать минимальный полифил flat](./puzzles/flatten/README.md)
 - [Реализовать fuzzysearch](./puzzles/fuzzysearch/README.md)
 - [Генерация простых чисел](./puzzles/generatePrime/README.md)
+- [Группировка анаграм](./puzzles/groupAnagrams/README.md)
