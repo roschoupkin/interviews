@@ -2,7 +2,7 @@ import atm from './atm';
 import { Limits, Nominal } from './atm.types';
 
 describe('atm', () => {
-  it('Return values correctly', () => {
+  test('Return values correctly', () => {
     const nominals: Nominal[] = [5000, 1000, 500, 100, 50];
     const limits: Limits = { 5000: 0, 1000: 6, 500: 5, 100: 5, 50: 4 };
 

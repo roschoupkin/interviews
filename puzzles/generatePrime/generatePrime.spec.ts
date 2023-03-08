@@ -2,7 +2,7 @@ import first from './generatePrime.first';
 import second from './generatePrime.second';
 
 describe('generatePrime', () => {
-  it('The first solution', () => {
+  test('The first solution', () => {
     expect(first(0)).toStrictEqual([]);
     expect(first(1)).toStrictEqual([]);
     expect(first(2)).toStrictEqual([2]);
@@ -21,7 +21,7 @@ describe('generatePrime', () => {
     ]);
   });
 
-  it('The second solution', () => {
+  test('The second solution', () => {
     expect(second(0)).toStrictEqual([]);
     expect(second(1)).toStrictEqual([]);
     expect(second(2)).toStrictEqual([2]);

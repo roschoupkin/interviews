@@ -1,31 +1,34 @@
-import { sumOfNumEqualK1, sumOfNumEqualK2, sumOfNumEqualK3, sumOfNumEqualK4 } from './sumOfNumEqualK';
+import first from './sumOfNumEqualK.first';
+import second from './sumOfNumEqualK.second';
+import third from './sumOfNumEqualK.third';
+import fourth from './sumOfNumEqualK.fourth';
 
-describe('Find two numbers from a list that returns k', () => {
-  test('base variant', () => {
-    expect(sumOfNumEqualK1([-1, 2, 5, 7], 7)).toStrictEqual([2, 5]);
-    expect(sumOfNumEqualK1([-3, -1, 0, 2, 6], 6)).toStrictEqual([0, 6]);
-    expect(sumOfNumEqualK1([2, 4, 5], 8)).toStrictEqual([]);
-    expect(sumOfNumEqualK1([-2, -1, 0, 2], 0)).toStrictEqual([-2, 2]);
+describe('sumOfNumEqualK', () => {
+  test('first', () => {
+    expect(first([-1, 2, 5, 7], 7)).toStrictEqual([2, 5]);
+    expect(first([-3, -1, 0, 2, 6], 6)).toStrictEqual([0, 6]);
+    expect(first([2, 4, 5], 8)).toStrictEqual([]);
+    expect(first([-2, -1, 0, 2], 0)).toStrictEqual([-2, 2]);
   });
 
-  test('with a hashset', () => {
-    expect(sumOfNumEqualK2([-1, 2, 5, 7], 7)).toStrictEqual([2, 5]);
-    expect(sumOfNumEqualK2([-3, -1, 0, 2, 6], 6)).toStrictEqual([0, 6]);
-    expect(sumOfNumEqualK2([2, 4, 5], 8)).toStrictEqual([]);
-    expect(sumOfNumEqualK2([-2, -1, 0, 2], 0)).toStrictEqual([-2, 2]);
+  test('second', () => {
+    expect(second([-1, 2, 5, 7], 7)).toStrictEqual([2, 5]);
+    expect(second([-3, -1, 0, 2, 6], 6)).toStrictEqual([0, 6]);
+    expect(second([2, 4, 5], 8)).toStrictEqual([]);
+    expect(second([-2, -1, 0, 2], 0)).toStrictEqual([-2, 2]);
   });
 
-  test('with a binary search', () => {
-    expect(sumOfNumEqualK3([-1, 2, 5, 7], 7)).toStrictEqual([2, 5]);
-    expect(sumOfNumEqualK3([-3, -1, 0, 2, 6], 6)).toStrictEqual([0, 6]);
-    expect(sumOfNumEqualK3([2, 4, 5], 8)).toStrictEqual([]);
-    expect(sumOfNumEqualK3([-2, -1, 0, 2], 0)).toStrictEqual([-2, 2]);
+  test('third', () => {
+    expect(third([-1, 2, 5, 7], 7)).toStrictEqual([2, 5]);
+    expect(third([-3, -1, 0, 2, 6], 6)).toStrictEqual([0, 6]);
+    expect(third([2, 4, 5], 8)).toStrictEqual([]);
+    expect(third([-2, -1, 0, 2], 0)).toStrictEqual([-2, 2]);
   });
 
-  test('the best solution', () => {
-    expect(sumOfNumEqualK4([-1, 2, 5, 7], 7)).toStrictEqual([2, 5]);
-    expect(sumOfNumEqualK4([-3, -1, 0, 2, 6], 6)).toStrictEqual([0, 6]);
-    expect(sumOfNumEqualK4([2, 4, 5], 8)).toStrictEqual([]);
-    expect(sumOfNumEqualK4([-2, -1, 0, 2], 0)).toStrictEqual([-2, 2]);
+  test('fourth', () => {
+    expect(fourth([-1, 2, 5, 7], 7)).toStrictEqual([2, 5]);
+    expect(fourth([-3, -1, 0, 2, 6], 6)).toStrictEqual([0, 6]);
+    expect(fourth([2, 4, 5], 8)).toStrictEqual([]);
+    expect(fourth([-2, -1, 0, 2], 0)).toStrictEqual([-2, 2]);
   });
 });

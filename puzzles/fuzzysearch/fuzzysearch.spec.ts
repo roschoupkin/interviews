@@ -3,7 +3,7 @@ import second from './fuzzysearch.second';
 import third from './fuzzysearch.third';
 
 describe('fuzzysearch', () => {
-  it('first', () => {
+  test('first', () => {
     expect(first('car', 'cartwheel')).toBe(true);
     expect(first('cwhl', 'cartwheel')).toBe(true);
     expect(first('cwhee', 'cartwheel')).toBe(true);
@@ -13,7 +13,7 @@ describe('fuzzysearch', () => {
     expect(first('lw', 'cartwheel')).toBe(false);
   });
 
-  it('second', () => {
+  test('second', () => {
     expect(second('car', 'cartwheel')).toBe(true);
     expect(second('cwhl', 'cartwheel')).toBe(true);
     expect(second('cwhee', 'cartwheel')).toBe(true);
@@ -23,7 +23,7 @@ describe('fuzzysearch', () => {
     expect(second('lw', 'cartwheel')).toBe(false);
   });
 
-  it('third', () => {
+  test('third', () => {
     expect(third('car', 'cartwheel')).toBe(true);
     expect(third('cwhl', 'cartwheel')).toBe(true);
     expect(third('cwhee', 'cartwheel')).toBe(true);

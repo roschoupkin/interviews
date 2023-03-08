@@ -1,7 +1,7 @@
 import isCorrectBrackets from './isCorrectBrackets';
 
 describe('isCorrectBrackets', () => {
-  it('first', () => {
+  test('first', () => {
     expect(isCorrectBrackets('(foo)')).toBe(true);
     expect(isCorrectBrackets('(f[o]{o})')).toBe(true);
     expect(isCorrectBrackets('[(){}()()]')).toBe(true);

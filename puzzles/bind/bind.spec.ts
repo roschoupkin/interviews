@@ -9,7 +9,7 @@ function sum(this: SumContext, a: number) {
 }
 
 describe('bind', () => {
-  it('first', () => {
+  test('first', () => {
     const apply = bind(sum, { a: 3 });
     expect(apply(2)).toBe(5);
   });

@@ -1,7 +1,7 @@
 import centuryFromYear from './centuryFromYear';
 
 describe('centuryFromYear', () => {
-  it('first', () => {
+  test('first', () => {
     expect(centuryFromYear(1705)).toBe(18);
     expect(centuryFromYear(1900)).toBe(19);
     expect(centuryFromYear(1601)).toBe(17);

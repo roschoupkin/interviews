@@ -3,7 +3,7 @@ import second from './isPalindrome.second';
 import third from './isPalindrome.third';
 
 describe('isPalindrome', () => {
-  it('first', () => {
+  test('first', () => {
     expect(first('Казак')).toBe(true);
     expect(first('А роза упала на лапу Азора')).toBe(true);
     expect(first('Do geese see God?')).toBe(true);
@@ -15,7 +15,7 @@ describe('isPalindrome', () => {
     expect(first('Я не палиндром')).toBe(false);
   });
 
-  it('second', () => {
+  test('second', () => {
     expect(second('Казак')).toBe(true);
     expect(second('А роза упала на лапу Азора')).toBe(true);
     expect(second('Do geese see God?')).toBe(true);
@@ -27,7 +27,7 @@ describe('isPalindrome', () => {
     expect(second('Я не палиндром')).toBe(false);
   });
 
-  it('third', () => {
+  test('third', () => {
     expect(third('Казак')).toBe(true);
     expect(third('А роза упала на лапу Азора')).toBe(true);
     expect(third('Do geese see God?')).toBe(true);

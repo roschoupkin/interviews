@@ -2,7 +2,7 @@ import first from './flatten.first';
 import second from './flatten.second';
 
 describe('flatten', () => {
-  it('first', () => {
+  test('first', () => {
     expect(first([1, 'any [complex] string', null, [1, 2, [3, '4'], 0], [], { a: 1 }])).toStrictEqual([
       1,
       'any [complex] string',
@@ -18,7 +18,7 @@ describe('flatten', () => {
     expect(first([[1, 5]])).toStrictEqual([1, 5]);
   });
 
-  it('second', () => {
+  test('second', () => {
     expect(second([1, 'any [complex] string', null, [1, 2, [3, '4'], 0], [], { a: 1 }])).toStrictEqual([
       1,
       'any [complex] string',
