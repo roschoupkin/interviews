@@ -1,39 +1,41 @@
-import { isPalindrome, isPalindrome2, isPalindrome3 } from './isPalindrome';
+import first from './isPalindrome.first';
+import second from './isPalindrome.second';
+import third from './isPalindrome.third';
 
-describe('is palindrome', () => {
-  it('Detect palindrome correctly by the first solution', () => {
-    expect(isPalindrome('Казак')).toBe(true);
-    expect(isPalindrome('А роза упала на лапу Азора')).toBe(true);
-    expect(isPalindrome('Do geese see God?')).toBe(true);
-    expect(isPalindrome('Madam, I’m Adam')).toBe(true);
+describe('isPalindrome', () => {
+  it('first', () => {
+    expect(first('Казак')).toBe(true);
+    expect(first('А роза упала на лапу Азора')).toBe(true);
+    expect(first('Do geese see God?')).toBe(true);
+    expect(first('Madam, I’m Adam')).toBe(true);
 
-    expect(isPalindrome('Test palindrome')).toBe(false);
-    expect(isPalindrome('Тест палиндрома')).toBe(false);
-    expect(isPalindrome('I’m not a palindrome')).toBe(false);
-    expect(isPalindrome('Я не палиндром')).toBe(false);
+    expect(first('Test palindrome')).toBe(false);
+    expect(first('Тест палиндрома')).toBe(false);
+    expect(first('I’m not a palindrome')).toBe(false);
+    expect(first('Я не палиндром')).toBe(false);
   });
 
-  it('Detect palindrome correctly by the second solution', () => {
-    expect(isPalindrome2('Казак')).toBe(true);
-    expect(isPalindrome2('А роза упала на лапу Азора')).toBe(true);
-    expect(isPalindrome2('Do geese see God?')).toBe(true);
-    expect(isPalindrome2('Madam, I’m Adam')).toBe(true);
+  it('second', () => {
+    expect(second('Казак')).toBe(true);
+    expect(second('А роза упала на лапу Азора')).toBe(true);
+    expect(second('Do geese see God?')).toBe(true);
+    expect(second('Madam, I’m Adam')).toBe(true);
 
-    expect(isPalindrome2('Test palindrome')).toBe(false);
-    expect(isPalindrome2('Тест палиндрома')).toBe(false);
-    expect(isPalindrome2('I’m not a palindrome')).toBe(false);
-    expect(isPalindrome2('Я не палиндром')).toBe(false);
+    expect(second('Test palindrome')).toBe(false);
+    expect(second('Тест палиндрома')).toBe(false);
+    expect(second('I’m not a palindrome')).toBe(false);
+    expect(second('Я не палиндром')).toBe(false);
   });
 
-  it('Detect palindrome correctly by the third solution', () => {
-    expect(isPalindrome3('Казак')).toBe(true);
-    expect(isPalindrome3('А роза упала на лапу Азора')).toBe(true);
-    expect(isPalindrome3('Do geese see God?')).toBe(true);
-    expect(isPalindrome3('Madam, I’m Adam')).toBe(true);
+  it('third', () => {
+    expect(third('Казак')).toBe(true);
+    expect(third('А роза упала на лапу Азора')).toBe(true);
+    expect(third('Do geese see God?')).toBe(true);
+    expect(third('Madam, I’m Adam')).toBe(true);
 
-    expect(isPalindrome3('Test palindrome')).toBe(false);
-    expect(isPalindrome3('Тест палиндрома')).toBe(false);
-    expect(isPalindrome3('I’m not a palindrome')).toBe(false);
-    expect(isPalindrome3('Я не палиндром')).toBe(false);
+    expect(third('Test palindrome')).toBe(false);
+    expect(third('Тест палиндрома')).toBe(false);
+    expect(third('I’m not a palindrome')).toBe(false);
+    expect(third('Я не палиндром')).toBe(false);
   });
 });
