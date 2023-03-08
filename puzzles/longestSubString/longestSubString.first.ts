@@ -1,4 +1,4 @@
-export default function longestSubStringFirst(str: string): number {
+export default function longestSubString(str: string): number {
   let longest = 0;
   let substring = '';
 

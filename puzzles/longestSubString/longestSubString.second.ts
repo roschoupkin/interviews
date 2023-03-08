@@ -1,4 +1,4 @@
-export default function longestSubString2(input: string): number {
+export default function longestSubString(input: string): number {
   let longest = 0;
   const store: string[] = [];
 

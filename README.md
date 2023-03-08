@@ -22,3 +22,4 @@
 - [Проверить, что строка – палиндром](./puzzles/isPalindrome/README.md)
 - [Возвести список во вторую степень](./puzzles/listPowTwo/README.md)
 - [Самая длинаая подстрока в строке](./puzzles/longestSubString/README.md)
+- [Длина подстроки в строке](./puzzles/subStrCount/README.md)

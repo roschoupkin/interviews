@@ -1,4 +1,4 @@
-export default function listPowTwo2(list: number[]) {
+export default function listPowTwo(list: number[]) {
   let lIndex = 0;
   let rIndex = list.length - 1;
 
