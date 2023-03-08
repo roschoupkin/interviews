@@ -24,3 +24,4 @@
 - [Самая длинаая подстрока в строке](./puzzles/longestSubString/README.md)
 - [Длина подстроки в строке](./puzzles/subStrCount/README.md)
 - [Сумма двух чисел из списка](./puzzles/sumOfNumEqualK/README.md)
+- [Сумма двух чисел из списка (индексы)](./puzzles/sumOfTwo/README.md)
