@@ -1,17 +1,18 @@
-import { longestSubString, longestSubString2 } from './longestSubString';
+import first from './longestSubString.first';
+import second from './longestSubString.second';
 
-describe('Longest substring', () => {
-  it('Should return size of longest substring', () => {
-    expect(longestSubString('abcabcbb')).toBe(3);
-    expect(longestSubString('bbbbb')).toBe(1);
-    expect(longestSubString('zabcade')).toBe(5);
-    expect(longestSubString('abcdebaabcdefg')).toBe(7);
+describe('longestSubString', () => {
+  it('first', () => {
+    expect(first('abcabcbb')).toBe(3);
+    expect(first('bbbbb')).toBe(1);
+    expect(first('zabcade')).toBe(5);
+    expect(first('abcdebaabcdefg')).toBe(7);
   });
 
-  it('Should return size of longest substring', () => {
-    expect(longestSubString2('abcabcbb')).toBe(3);
-    expect(longestSubString2('bbbbb')).toBe(1);
-    expect(longestSubString2('zabcade')).toBe(5);
-    expect(longestSubString2('abcdebaabcdefg')).toBe(7);
+  it('second', () => {
+    expect(second('abcabcbb')).toBe(3);
+    expect(second('bbbbb')).toBe(1);
+    expect(second('zabcade')).toBe(5);
+    expect(second('abcdebaabcdefg')).toBe(7);
   });
 });
