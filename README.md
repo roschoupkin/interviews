@@ -20,3 +20,4 @@
 - [Генерация простых чисел](./puzzles/generatePrime/README.md)
 - [Группировка анаграм](./puzzles/groupAnagrams/README.md)
 - [Проверить, что строка – палиндром](./puzzles/isPalindrome/README.md)
+- [Возвести список во вторую степень](./puzzles/listPowTwo/README.md)

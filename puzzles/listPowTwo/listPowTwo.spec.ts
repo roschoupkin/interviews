@@ -1,24 +1,26 @@
-import { listPowTwo1, listPowTwo2, listPowTwo3 } from './listPowTwo';
+import first from './listPowTwo.first';
+import second from './listPowTwo.second';
+import third from './listPowTwo.third';
 
-describe('List pow two', () => {
-  it('Should return correct list of numbers by the first method', () => {
-    expect(listPowTwo1([0, 1, 2])).toStrictEqual([0, 1, 4]);
-    expect(listPowTwo1([-5, -3, 0, 1, 2])).toStrictEqual([0, 1, 4, 9, 25]);
-    expect(listPowTwo1([-5, -3, 0, 1, 2, 6])).toStrictEqual([0, 1, 4, 9, 25, 36]);
-    expect(listPowTwo1([-5, -3, 0, 1, 2, 2, 6])).toStrictEqual([0, 1, 4, 4, 9, 25, 36]);
+describe('listPowTwo', () => {
+  it('first', () => {
+    expect(first([0, 1, 2])).toStrictEqual([0, 1, 4]);
+    expect(first([-5, -3, 0, 1, 2])).toStrictEqual([0, 1, 4, 9, 25]);
+    expect(first([-5, -3, 0, 1, 2, 6])).toStrictEqual([0, 1, 4, 9, 25, 36]);
+    expect(first([-5, -3, 0, 1, 2, 2, 6])).toStrictEqual([0, 1, 4, 4, 9, 25, 36]);
   });
 
-  it('Should return correct list of numbers by the second method', () => {
-    expect(listPowTwo2([0, 1, 2])).toStrictEqual([0, 1, 4]);
-    expect(listPowTwo2([-5, -3, 0, 1, 2])).toStrictEqual([0, 1, 4, 9, 25]);
-    expect(listPowTwo2([-5, -3, 0, 1, 2, 6])).toStrictEqual([0, 1, 4, 9, 25, 36]);
-    expect(listPowTwo2([-5, -3, 0, 1, 2, 2, 6])).toStrictEqual([0, 1, 4, 4, 9, 25, 36]);
+  it('second', () => {
+    expect(second([0, 1, 2])).toStrictEqual([0, 1, 4]);
+    expect(second([-5, -3, 0, 1, 2])).toStrictEqual([0, 1, 4, 9, 25]);
+    expect(second([-5, -3, 0, 1, 2, 6])).toStrictEqual([0, 1, 4, 9, 25, 36]);
+    expect(second([-5, -3, 0, 1, 2, 2, 6])).toStrictEqual([0, 1, 4, 4, 9, 25, 36]);
   });
 
-  it('Should return correct list of numbers by the third method', () => {
-    expect(listPowTwo3([0, 1, 2])).toStrictEqual([0, 1, 4]);
-    expect(listPowTwo3([-5, -3, 0, 1, 2])).toStrictEqual([0, 1, 4, 9, 25]);
-    expect(listPowTwo3([-5, -3, 0, 1, 2, 6])).toStrictEqual([0, 1, 4, 9, 25, 36]);
-    expect(listPowTwo3([-5, -3, 0, 1, 2, 2, 6])).toStrictEqual([0, 1, 4, 4, 9, 25, 36]);
+  it('third', () => {
+    expect(third([0, 1, 2])).toStrictEqual([0, 1, 4]);
+    expect(third([-5, -3, 0, 1, 2])).toStrictEqual([0, 1, 4, 9, 25]);
+    expect(third([-5, -3, 0, 1, 2, 6])).toStrictEqual([0, 1, 4, 9, 25, 36]);
+    expect(third([-5, -3, 0, 1, 2, 2, 6])).toStrictEqual([0, 1, 4, 4, 9, 25, 36]);
   });
 });
