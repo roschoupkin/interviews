@@ -26,3 +26,5 @@
 - [Сумма двух чисел из списка](./puzzles/sumOfNumEqualK/README.md)
 - [Сумма двух чисел из списка (индексы)](./puzzles/sumOfTwo/README.md)
 - [Суммирование чисел в цепочке вызововов](./puzzles/sumOfChains/README.md)
+- [Генератор случайных HEX цветов](./puzzles/generateRandomHEX/README.md)
+- [Реализовать базовый range из Python](./puzzles/range/README.md)

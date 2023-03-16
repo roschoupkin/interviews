@@ -1,4 +1,3 @@
-import { expect } from '@jest/globals';
 import generateRandomHEX from './generateRandomHEX';
 
 describe('generateRandomHEX', () => {
