@@ -1,7 +1,7 @@
 import { recoverSecret } from './recoverSecret';
 
 describe('Recover a secret string from random triplets', () => {
-  it('Should return whatisup', () => {
+  test('Should return whatisup', () => {
     expect(
       recoverSecret([
         ['t', 'u', 'p'],

@@ -12,11 +12,11 @@ describe('Moving zeros to end', () => {
     },
   };
 
-  it('Should return correct array from first function', () => {
+  test('Should return correct array from first function', () => {
     expect(moveZeros(data.first.arguments)).toStrictEqual(data.first.result);
     expect(moveZeros(data.second.arguments)).toStrictEqual(data.second.result);
   });
-  it('Should return correct array from second function', () => {
+  test('Should return correct array from second function', () => {
     expect(moveZeros2(data.first.arguments)).toStrictEqual(data.first.result);
     expect(moveZeros2(data.second.arguments)).toStrictEqual(data.second.result);
   });

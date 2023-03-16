@@ -24,17 +24,17 @@ describe('Direction reduction', () => {
     },
   };
 
-  it('Should return correct direction from first function', () => {
+  test('Should return correct direction from first function', () => {
     expect(dirReduction(data.first.arguments)).toStrictEqual(data.first.result);
     expect(dirReduction(data.second.arguments)).toStrictEqual(data.second.result);
     expect(dirReduction(data.third.arguments)).toStrictEqual(data.third.result);
   });
-  it('Should return correct direction from second function', () => {
+  test('Should return correct direction from second function', () => {
     expect(dirReduction2(data.first.arguments)).toStrictEqual(data.first.result);
     expect(dirReduction2(data.second.arguments)).toStrictEqual(data.second.result);
     expect(dirReduction2(data.third.arguments)).toStrictEqual(data.third.result);
   });
-  it('Should return correct direction from third function', () => {
+  test('Should return correct direction from third function', () => {
     expect(dirReduction3(data.first.arguments)).toStrictEqual(data.first.result);
     expect(dirReduction3(data.second.arguments)).toStrictEqual(data.second.result);
     expect(dirReduction3(data.third.arguments)).toStrictEqual(data.third.result);
