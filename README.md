@@ -25,3 +25,4 @@
 - [Длина подстроки в строке](./puzzles/subStrCount/README.md)
 - [Сумма двух чисел из списка](./puzzles/sumOfNumEqualK/README.md)
 - [Сумма двух чисел из списка (индексы)](./puzzles/sumOfTwo/README.md)
+- [Суммирование чисел в цепочке вызововов](./puzzles/sumOfChains/README.md)
