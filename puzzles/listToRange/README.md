@@ -31,3 +31,4 @@ listToRange([1]); // '1'
 
 - [Через дополнительный флаг](listToRange.first.ts)
 - [Через цикл в цикле](listToRange.second.ts)
+- [Через указатель](listToRange.third.ts)
